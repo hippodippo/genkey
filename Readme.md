@@ -11,6 +11,10 @@ yarn add genkey
 
 ## The Gist
 ```
+import genkey from 'genkey';
+
+...
+
 let { names } = this.state;
 
 let userNames = names.map(name => {

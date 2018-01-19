@@ -1,6 +1,6 @@
 {
   "name": "genkey",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A key generator for React List Components",
   "main": "index.js",
   "scripts": {
