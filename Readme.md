@@ -6,17 +6,15 @@ I mainly built genkey for when you are using an array when creating a React List
 
 ## Installation
 ```
-npm install --save genkey
+yarn add genkey
 ```
 
 ## The Gist
 ```
 let { names } = this.state;
 
-let userNames = names.map((name, index) => {
-  return (
-    return <h3 key={genkey()}>{name}</h3>;
-  );
+let userNames = names.map(name => {
+  return <h3 key={genkey()}>{name}</h3>;
 });
 ```
 Genkey accepts two optional arguments.

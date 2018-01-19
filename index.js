@@ -9,7 +9,7 @@ function abcGen(caps=false) {
   return array;
 }
 
-function genKey(len, upcase=false) {
+function genKey(len=7, upcase=false) {
   var abc = upcase ? abcGen(upcase) : abcGen();
   var key = [];
   var length = upcase ? len+1 : len;
