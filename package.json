@@ -1,0 +1,24 @@
+{
+  "name": "genkey",
+  "version": "1.0.0",
+  "description": "A key generator for React List Components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HippoDippo/keygen.git"
+  },
+  "keywords": [
+    "React",
+    "keys",
+    "lists"
+  ],
+  "author": "Kaycee Ingram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HippoDippo/keygen/issues"
+  },
+  "homepage": "https://github.com/HippoDippo/keygen#readme"
+}
