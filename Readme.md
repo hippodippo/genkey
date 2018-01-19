@@ -22,15 +22,15 @@ let userNames = names.map(name => {
 });
 ```
 Genkey accepts two optional arguments.
-The first argument accepts a number to specify how long you want the keys to be (default length is 7).
+The first argument accepts a number to specify how long you want the keys to be (default length is 14).
 The second argument accepts a boolean of either true or false (default is false). Passing in true will make genkey return keys with all caps.
-Below genkey will generate keys that are all caps and have a length of 14 characters.
+Below genkey will generate keys that are all caps and have a length of 33 characters.
 ```
 let { names } = this.state;
 
 let userNames = names.map((name, index) => {
   return (
-    return <h3 key={genkey(14, true)}>{name}</h3>;
+    return <h3 key={genkey(33, true)}>{name}</h3>;
   );
 });
 ```
