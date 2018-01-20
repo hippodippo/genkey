@@ -29,8 +29,6 @@ Below genkey will generate keys that are all caps and have a length of 33 charac
 let { names } = this.state;
 
 let userNames = names.map((name, index) => {
-  return (
-    return <h3 key={genkey(33, true)}>{name}</h3>;
-  );
+  return <h3 key={genkey(33, true)}>{name}</h3>;
 });
 ```
