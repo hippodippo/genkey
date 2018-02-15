@@ -1,4 +1,4 @@
-function abcGen(caps=false) {
+function genAbc(caps=false) {
   var array = [];
   var startIndex = caps ? 65 : 98;
   var endIndex = caps ? 90 : 123 ;
@@ -9,8 +9,8 @@ function abcGen(caps=false) {
   return array;
 }
 
-function genKey(len=14, upcase=false) {
-  var abc = upcase ? abcGen(upcase) : abcGen();
+function genKey(len, upcase) {
+  var abc = upcase ? genAbc(upcase) : genAbc();
   var key = [];
   var length = upcase ? len+1 : len;
 
@@ -20,4 +20,14 @@ function genKey(len=14, upcase=false) {
   return key.join('');
 }
 
-module.exports = genKey;
+function genObj({ array }, len=14, upcase=false) {
+  var newArray = [];
+
+  for (var y = 0; y < array.length; y++) {
+    newArray.push({key: genKey(len, upcase), item: array[y]});
+  }
+  return newArray;
+}
+
+
+module.exports = genObj;
